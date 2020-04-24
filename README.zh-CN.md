@@ -24,9 +24,11 @@
 
 ## 组件
 
-- [VXFORM](http://docs.form.xiaoyaoji.cn/zh/guide/making-form.html) 常规表单设计器（基于可视化操作快速设计出表单页面，并获取到表单配置 json 数据（也可以根据JSON数据，快速渲染出表单页面））。
+-VX/CORE [vxform]常规表单|问卷表单生成器（根据设计器中获取的配置 json 数据，快速渲染出表单页面）。
 
-- [VXSURVEY](http://docs.form.xiaoyaoji.cn/zh/guide/generate-form.html) 问卷表单生成器（基于可视化操作快速设计出表单页面，并获取到表单配置 json 数据（也可以根据JSON数据，快速渲染出表单页面））。
+-VX/ANT [vxform-design-detail]常规表单设计器（基于可视化操作快速设计出表单页面，并获取到表单配置 json 数据）。 
+
+-VX/SURVEY [vxsurvey-design-detail]问卷表单设计器（基于可视化操作快速设计出表单页面，并获取到表单配置 json 数据）。
 
 ## 支持
 
@@ -38,8 +40,6 @@
 
 ![](https://github.com/dasaoyu/ng-form-design/blob/master/src/assets/images/wechat.jpg)
 
-[PayPal Me](https://paypal.me/gavinzhulei)
-
 
 ## 开源协议
 
@@ -49,4 +49,4 @@
 
 ## 商业许可
 
-如果要将 ng-form-desgin 源码使用在非开源站点，项目和应用程序中，为保障您的合法权益，需购买[商业授权] 联系我们。
+如果要将 ng-form-desgin 源码使用在非开源站点，项目和应用程序中，为保障您的合法权益，需购买-商业授权,联系我们(dasaoyu@yeah.net)

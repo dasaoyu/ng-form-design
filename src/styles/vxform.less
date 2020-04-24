@@ -1,0 +1,519 @@
+.vxform-scrollbar {
+  scrollbar-color: transparent;
+  overflow-y: overlay;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 6px;
+    outline: 1px solid #333;
+  }
+
+}
+.vxbutton-button {
+  padding: 15px 10px !important;
+  text-align: right !important;
+  border-top: solid 1px #dcdce0 !important;
+  border-bottom: 0 !important;
+}
+.vxform-basic {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+
+  vxform {
+    display: block;
+    flex: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 20px 30px;
+    background-color: #fff;
+  }
+
+  .vxbutton {
+    padding: 10px;
+    border-bottom: solid 1px #dcdce0;
+
+    .btn {
+      min-width: 44px;
+      height: 22px;
+      border-radius: 3px;
+      font-size: 12px;
+      padding: 0 5px;
+      border: 1px solid #6090df;
+      margin-right: 8px;
+
+      &-save {
+        color: #fff;
+        background-color: #71a9ff;
+      }
+
+      &-cancel,
+      &-reset {
+        color: #6090df;
+        //background-color: #fff;
+      }
+    }
+  }
+
+  .tips {
+    position: relative;
+    width: 18px;
+    margin-left: 6px;
+
+    .icon-bangzhu {
+      display: inline-block;
+      color: #bfbfbf;
+      font-size: 18px;
+      position: absolute;
+      top: 50%;
+      margin-top: -9px;
+    }
+  }
+
+  .ant-checkbox-group,
+  .ant-checkbox-wrapper,
+  .ant-radio-wrapper {
+    line-height: 32px !important;
+  }
+
+  .has-error {
+
+    .ant-input,
+    .ant-input:hover,
+    .ant-input-number,
+    .ant-time-picker-input,
+    .ant-select-selection,
+    .ant-upload {
+      border: 1px solid #fc8e8c;
+    }
+
+    .ant-upload.ant-upload-drag {
+      border: 0px solid #fc8e8c;
+    }
+
+    .icon-tianjin,
+    .anticon {
+      color: #fc8e8c;
+    }
+  }
+
+  .ant-input,
+  .ant-select-selection {
+    border: 1px solid #dcdce0;
+  }
+
+  /*基础组件*/
+  vxfield-wrapper,
+  vxfield-text,
+  vxfield-texti18n,
+  vxfield-textarea,
+  vxfield-number,
+  vxfield-password,
+  vxfield-number,
+  vxfield-radio,
+  vxfield-checkbox,
+  vxfield-select,
+  vxfield-datetime,
+  vxfield-image,
+  vxfield-upload,
+  vxfield-lookup,
+  vxfield-html,
+  vxfield-line, 
+  vxform-repeat {
+    display: flex;
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex: 1;
+
+    .fieldtext {
+      height: 32px;
+      line-height: 32px;
+    }
+  }
+
+  vxfield-lookup {
+    nz-input-group {
+      width: 100%;
+      &:hover {
+        .anticon {
+          display: -webkit-box;
+          display: flex;
+        }
+      }
+
+      .ant-input {
+        min-height: auto;
+      }
+
+      .anticon {
+        display: none;
+        padding: 1px;
+        background-color: #bbb;
+        color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        font-size: 14px;
+        top: 50%;
+        right: 0px;
+        z-index: 3;
+        -webkit-box-align: center;
+        align-items: center;
+        line-height: 0;
+        -webkit-transform: translateY(-52%);
+        transform: translateY(-52%);
+      }
+
+      span>.icon-tianjin {
+        color: #bfbfbf;
+        font-size: 16px;
+        line-height: 0 !important;
+      }
+    }
+  }
+
+  vxform-validation-message {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    color: #fc8e8c !important;
+    font-size: 12px;
+  }
+
+  vxfield-textarea {
+    .fieldtext {
+      height: auto !important;
+    }
+  }
+
+  vxfield-texti18n {
+    .inputi18n {
+      display: flex;
+      width: 100%;
+      -webkit-box-flex: 1;
+      flex: 1;
+    }
+  }
+
+  vxfield-html {
+    .fieldControl {
+      padding: 6px 0 0 10px;
+
+      .control {
+        padding: 15px 10px 15px 10px !important;
+      }
+    }
+  }
+
+  /*撑满组件*/
+  nz-upload,
+  .panel-line,
+  .panel-html {
+    width: 100% !important;
+  }
+
+  /*多记录区域*/
+  vxform-repeat {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+
+    .row {
+      position: relative;
+      margin-bottom: 30px;
+      border: 1px solid #ffca5e;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-flex: 1;
+      flex: 1;
+      -webkit-box-align: center;
+      align-items: center;
+      // padding: 10px 0 0 0;
+      padding: 30px 0px 0 0;
+      margin-left: 10px;
+      margin-right: 10px;
+
+
+      .del {
+        -webkit-box-align: center;
+        align-items: center;
+        min-width: 50px;
+        height: 22px;
+        line-height: 22px;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        border-color: #6090df;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        position: absolute;
+        top: -23px;
+        right: -1px;
+        margin: 0;
+        padding: 1px 6px;
+        font-size: 12px;
+        background-color: #ffb15e;
+        box-sizing: border-box;
+      }
+
+      .panel-vxform-group {
+        -webkit-box-flex: 1;
+        flex: 1;
+      }
+    }
+
+    .add span {
+      float: right;
+      display: inline-block;
+      width: 200px;
+      border-radius: 4px;
+      line-height: 32px;
+      text-align: center;
+      color: #6090df;
+      background-color: #f6f8fd;
+      border-color: #6090df;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    vxform-group {
+      width: 100%;
+    }
+
+    vxform-field {
+      display: flex;
+      width: 100%;
+
+      vxfield-wrapper,
+      vxfield-input,
+      vxfield-number,
+      vxfield-textarea,
+      vxfield-datepicker,
+      vxfield-select,
+      vxfield-radio,
+      vxfield-checkbox,
+      vxfield-multiradio,
+      vxfield-multicheckbox,
+      vxfield-image,
+      vxfield-lookup,
+      vxfield-template,
+      vxfield-label,
+      vxfield-upload {
+        display: flex;
+        -webkit-box-flex: 1;
+        flex: 1;
+      }
+    }
+
+  }
+  nz-picker{
+    display: flex;
+    flex: 1;
+    .ant-calendar-picker {
+      flex: 1;
+    }
+  }
+
+  vxfield-wrapper{
+    .fieldlabel {
+      span {
+        display: inline-block;
+        color: #ff4018;
+        margin-right: 3px;
+      }
+    }
+  }
+
+  vxform-field {
+    .fieldcontrol {
+      -webkit-box-flex: 1;
+      flex: 1;
+      nz-picker,
+      nz-input-number,
+      nz-year-picker,
+      nz-time-picker,
+      .ant-calendar-picker {
+        width: 100%;
+      }
+    }
+
+    .fieldlabel {
+      width: 150px;
+      padding-right: 6px;
+      padding-left: 6px;
+      padding-top: 7px;
+      margin-bottom: 0;
+      font-size: 13px;
+      line-height: 17px;
+      color: #323232;
+      text-align: right;
+      vertical-align: middle;
+      float: left;
+      box-sizing: border-box;
+      font-weight: 400;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      &::after {
+        content: "：";
+      }
+    }
+
+    .fieldContent {
+      display: -webkit-box;
+      display: flex;
+      width: 100%;
+      margin: 0 0 15px 0;
+    }
+
+    .invalid-feedback {
+      width: 100%;
+      height: 30px;
+      line-height: 26px;
+    }
+  }
+
+  .panel-repeat,
+  .panel-textarea,
+  .panel-label,
+  .panel-upload {
+    width: 100% !important;
+  }
+
+  .fieldcontrol hr {
+    border: 0;
+    border-top: 1px solid #dcdce0;
+    margin: 10px 0 25px 0;
+  }
+
+
+  .panel-label {
+    vxfield-label {
+      .fieldcontrol {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 13px;
+        color: #6090df;
+      }
+    }
+  }
+
+  /*布局样式*/
+  .layout-column-1 {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    vxfield-text,
+    vxfield-texti18n,
+    vxfield-textarea,
+    vxfield-number,
+    vxfield-password,
+    vxfield-radio,
+    vxfield-checkbox,
+    vxfield-select,
+    vxfield-datetime,
+    vxfield-image,
+    vxfield-upload,
+    vxfield-lookup,
+    vxfield-html,
+    vxfield-line,
+    vxfield-texti18n .inputi18n {
+      width: 560px;
+    }
+
+    vxform-repeat {
+      .row {
+        .panel-vxform-group {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+
+  .layout-column-2 {
+    display: flex;
+    flex-direction: column;
+
+    vxform-field {
+      float: left;
+      width: 50%;
+    }
+
+    vxform-repeat {
+      vxform-field {
+        float: left;
+        width: 50%;
+      }
+    }
+  }
+
+  .layout-column-3 {
+    display: flex;
+    flex-direction: column;
+
+    vxform-field {
+      float: left;
+      width: 33.33333%;
+    }
+
+    vxform-repeat {
+      vxfield {
+        float: left;
+        width: 33.33333%;
+      }
+    }
+  }
+
+  .layout-row-2 {
+    .panel-label {
+      vxfield-html {
+        .fieldcontrol {
+          padding-top: 15px !important;
+          padding-bottom: 15px !important;
+        }
+      }
+    }
+
+    vxfield-wrapper{
+      flex-direction: column !important;
+
+      .fieldlabel {
+        float: left !important;
+        text-align: left !important;
+        flex: 1 !important;
+        width: 100% !important;
+        padding: 0 10px;
+      }
+
+      .fieldcontrol {
+        padding: 5px 10px 0px 10px !important;
+
+        hr {
+          margin: 0 0 15px 0 !important;
+        }
+      }
+    }
+  }
+}

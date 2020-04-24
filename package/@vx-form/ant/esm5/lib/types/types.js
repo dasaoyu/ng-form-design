@@ -1,0 +1,36 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/*************************** */
+//文本
+export { VXFormFieldText } from "./text";
+//文本多语言
+export { VXFormFieldTextI18n } from "./texti18n";
+//文本多行
+export { VXFormFieldTextArea } from "./textarea";
+//数字
+export { VXFormFieldNumber } from "./number";
+//密码
+export { VXFormFieldPassWord } from "./password";
+//单选
+export { VXFormFieldRadio } from "./radio";
+export { VXFormFieldRadioGroup } from "./radiogroup";
+//多选
+export { VXFormFieldCheckbox } from "./checkbox";
+export { VXFormFieldCheckboxGroup } from "./checkboxgroup";
+//下拉选择
+export { VXFormFieldSelect } from "./select";
+//时间
+export { VXFormFieldDateTime } from "./datetime";
+//图片
+export { VXFormFieldImage } from "./image";
+//上传
+export { VXFormFieldUpload } from "./upload";
+//弹框
+export { VXFormFieldLookUp } from "./lookup";
+//html片段
+export { VXFormFieldHTML } from "./html";
+//分割线
+export { VXFormFieldLine } from "./line";
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHlwZXMuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AdngtZm9ybS9hbnQvIiwic291cmNlcyI6WyJsaWIvdHlwZXMvdHlwZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBRUEsT0FBTyxFQUFFLGVBQWUsRUFBRSxNQUFNLFFBQVEsQ0FBQzs7QUFFekMsT0FBTyxFQUFFLG1CQUFtQixFQUFFLE1BQU0sWUFBWSxDQUFDOztBQUVqRCxPQUFPLEVBQUUsbUJBQW1CLEVBQUUsTUFBTSxZQUFZLENBQUM7O0FBRWpELE9BQU8sRUFBRSxpQkFBaUIsRUFBRSxNQUFNLFVBQVUsQ0FBQzs7QUFFN0MsT0FBTyxFQUFFLG1CQUFtQixFQUFFLE1BQU0sWUFBWSxDQUFDOztBQUVqRCxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxTQUFTLENBQUM7QUFDM0MsT0FBTyxFQUFFLHFCQUFxQixFQUFFLE1BQU0sY0FBYyxDQUFDOztBQUVyRCxPQUFPLEVBQUUsbUJBQW1CLEVBQUUsTUFBTSxZQUFZLENBQUM7QUFDakQsT0FBTyxFQUFFLHdCQUF3QixFQUFFLE1BQU0saUJBQWlCLENBQUM7O0FBRTNELE9BQU8sRUFBRSxpQkFBaUIsRUFBRSxNQUFNLFVBQVUsQ0FBQzs7QUFFN0MsT0FBTyxFQUFFLG1CQUFtQixFQUFFLE1BQU0sWUFBWSxDQUFDOztBQUVqRCxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxTQUFTLENBQUM7O0FBRTNDLE9BQU8sRUFBRSxpQkFBaUIsRUFBRSxNQUFNLFVBQVUsQ0FBQzs7QUFFN0MsT0FBTyxFQUFFLGlCQUFpQixFQUFFLE1BQU0sVUFBVSxDQUFDOztBQUU3QyxPQUFPLEVBQUUsZUFBZSxFQUFFLE1BQU0sUUFBUSxDQUFDOztBQUd6QyxPQUFPLEVBQUUsZUFBZSxFQUFFLE1BQU0sUUFBUSxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqKioqKioqKioqKioqKioqKioqKioqKioqKiAqL1xyXG4vL+aWh+acrFxyXG5leHBvcnQgeyBWWEZvcm1GaWVsZFRleHQgfSBmcm9tIFwiLi90ZXh0XCI7XHJcbi8v5paH5pys5aSa6K+t6KiAXHJcbmV4cG9ydCB7IFZYRm9ybUZpZWxkVGV4dEkxOG4gfSBmcm9tIFwiLi90ZXh0aTE4blwiO1xyXG4vL+aWh+acrOWkmuihjFxyXG5leHBvcnQgeyBWWEZvcm1GaWVsZFRleHRBcmVhIH0gZnJvbSBcIi4vdGV4dGFyZWFcIjtcclxuLy/mlbDlrZdcclxuZXhwb3J0IHsgVlhGb3JtRmllbGROdW1iZXIgfSBmcm9tIFwiLi9udW1iZXJcIjtcclxuLy/lr4bnoIFcclxuZXhwb3J0IHsgVlhGb3JtRmllbGRQYXNzV29yZCB9IGZyb20gXCIuL3Bhc3N3b3JkXCI7XHJcbi8v5Y2V6YCJXHJcbmV4cG9ydCB7IFZYRm9ybUZpZWxkUmFkaW8gfSBmcm9tIFwiLi9yYWRpb1wiO1xyXG5leHBvcnQgeyBWWEZvcm1GaWVsZFJhZGlvR3JvdXAgfSBmcm9tIFwiLi9yYWRpb2dyb3VwXCI7XHJcbi8v5aSa6YCJXHJcbmV4cG9ydCB7IFZYRm9ybUZpZWxkQ2hlY2tib3ggfSBmcm9tIFwiLi9jaGVja2JveFwiO1xyXG5leHBvcnQgeyBWWEZvcm1GaWVsZENoZWNrYm94R3JvdXAgfSBmcm9tIFwiLi9jaGVja2JveGdyb3VwXCI7XHJcbi8v5LiL5ouJ6YCJ5oupXHJcbmV4cG9ydCB7IFZYRm9ybUZpZWxkU2VsZWN0IH0gZnJvbSBcIi4vc2VsZWN0XCI7XHJcbi8v5pe26Ze0XHJcbmV4cG9ydCB7IFZYRm9ybUZpZWxkRGF0ZVRpbWUgfSBmcm9tIFwiLi9kYXRldGltZVwiO1xyXG4vL+WbvueJh1xyXG5leHBvcnQgeyBWWEZvcm1GaWVsZEltYWdlIH0gZnJvbSBcIi4vaW1hZ2VcIjtcclxuLy/kuIrkvKBcclxuZXhwb3J0IHsgVlhGb3JtRmllbGRVcGxvYWQgfSBmcm9tIFwiLi91cGxvYWRcIjtcclxuLy/lvLnmoYZcclxuZXhwb3J0IHsgVlhGb3JtRmllbGRMb29rVXAgfSBmcm9tIFwiLi9sb29rdXBcIjtcclxuLy9odG1s54mH5q61XHJcbmV4cG9ydCB7IFZYRm9ybUZpZWxkSFRNTCB9IGZyb20gXCIuL2h0bWxcIjtcclxuXHJcbi8v5YiG5Ymy57q/XHJcbmV4cG9ydCB7IFZYRm9ybUZpZWxkTGluZSB9IGZyb20gXCIuL2xpbmVcIjtcclxuXHJcbiJdfQ==

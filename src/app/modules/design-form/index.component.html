@@ -1,0 +1,17 @@
+<div class="form-default">
+    <vxform-design-detail [formCode]="formCode" [api]="formAPI"  (saveEvent)="saveForm($event)" (previewEvent)="openPreview($event)"></vxform-design-detail>
+</div>
+
+<ng-template #tplContent>
+    <form [formGroup]="form" (ngSubmit)="submit()" nz-form class="vxform-basic">
+        
+        <div [class]=" layout +' vxform-scrollbar'">
+            <vxform [fields]="config" [form]="form" [model]="model" [options]="options">
+            </vxform>
+        </div>
+        <div class="vxbutton vxbutton-button">
+            <button type="submit" class="btn btn-save">保存数据</button> 
+            <button type="button" (click)="getModel()" class="btn btn-save">获取数据</button> 
+        </div> 
+    </form>     
+</ng-template>

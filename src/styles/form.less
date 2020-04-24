@@ -1,0 +1,28 @@
+@import './variable.less';
+
+.form-default{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  .form-step{
+    flex: 1;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    .ant-card-body{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .form-content{ 
+      flex: 1;
+      display: flex;
+      overflow: auto;
+      height: 100%;
+      position: relative;
+      .vxscrollbar();
+    }
+  }
+} 

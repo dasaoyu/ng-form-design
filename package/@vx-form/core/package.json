@@ -1,0 +1,34 @@
+{
+  "name": "@vx-form/core",
+  "version": "1.0.0",
+  "keywords": [
+    "angular",
+    "forms",
+    "ng-vxform",
+    "vx-form",
+    "vxform",
+    "angular 2",
+    "angular 2 forms",
+    "json forms",
+    "form library",
+    "dynamic-forms"
+  ],
+  "dependencies": {
+    "tslib": "^1.7.1"
+  },
+  "peerDependencies": {
+    "@angular/forms": "8.2.14",
+    "rxjs": ">=6.3.0",
+    "moment": "^2.24.0"
+  },
+  "main": "bundles/vx-form-core.umd.js",
+  "module": "fesm5/vx-form-core.js",
+  "es2015": "fesm2015/vx-form-core.js",
+  "esm5": "esm5/vx-form-core.js",
+  "esm2015": "esm2015/vx-form-core.js",
+  "fesm5": "fesm5/vx-form-core.js",
+  "fesm2015": "fesm2015/vx-form-core.js",
+  "typings": "vx-form-core.d.ts",
+  "metadata": "vx-form-core.metadata.json",
+  "sideEffects": false
+}

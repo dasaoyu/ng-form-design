@@ -1,0 +1,30 @@
+@{full-content-prefix} {
+  &__body {
+    .vx-default__content {
+      router-outlet + * {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .vx-default__content-title {
+      margin-left: -24px;
+    }
+  }
+  &__opened {
+    .vx-default__header,
+    .vx-default__aside,
+    reuse-tab {
+      display: none !important;
+    }
+    .vx-default__content {
+      margin: 24px !important;
+    }
+  }
+  &__hidden-title {
+    .vx-default__content-title,
+    .page-header {
+      display: none !important;
+    }
+  }
+}

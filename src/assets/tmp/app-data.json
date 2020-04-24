@@ -1,0 +1,12 @@
+{
+  "app": {
+    "name": "VXForm",
+    "description": "VXForm多功能表单设计"
+  },
+  "user": {
+    "name": "Admin",
+    "avatar": "./assets/tmp/img/avatar.jpg",
+    "email": "JackRen@knx.com.cn"
+  },
+  "menu": []
+}

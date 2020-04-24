@@ -1,0 +1,22 @@
+/*************************** */
+export { VXSurveyRadioGroup } from "./radiogroup";
+export { VXSurveyDragDrop } from "./drag-drop";
+export { VXSurveyRadio } from "./basic/radio";
+export { VXSurveyCheckBox } from "./basic/checkbox";
+export { VXSurveyDropdown } from "./basic/dropdown";
+export { VXSurveyCascader } from "./basic/cascader";
+export { VXSurveyScaler } from "./basic/scaler";
+export { VXSurveyScore } from "./basic/score";
+export { VXSurveyLine } from "./basic/line";
+export { VXSurveyRemark } from "./basic/remark";
+export { VXSurveyInput } from "./basic/input";
+export { VXSurveyDate } from "./basic/date";
+export { VXSurveyTime } from "./basic/time";
+export { VXSurveyNPS } from "./basic/nps";
+export { VXSurveyProportion } from './basic/proportion';
+export { VXSurveyEvaluation } from './basic/evaluation';
+export { VXSurveyMatrixRadio } from './basic/matrix_radio';
+export { VXSurveyMatrixCheckBox } from './basic/matrix_checkbox';
+export { VXSurveyMatrixScore } from './basic/matrix_score';
+export { VXSurveyMatrixInput } from './basic/matrix_input';
+export { VXSurveyInputGroup } from './basic/input_group';

@@ -1,0 +1,349 @@
+{
+  "code": "formtestcode",
+  "name": "第一个自定义表单",
+  "type": "",
+  "fields": [
+    {
+      "key": "table1;code",
+      "type": "text",
+      "templateOptions": {
+        "label": "工号",
+        "required": true,
+        "placeholder": "",
+        "isbutintin": true
+      },
+      "origin": {
+        "refdatasourcetype": "directinput",
+        "datatype": "nvarchar"
+      },
+      "tablecode": "table1",
+      "hooks": {}
+    },
+    {
+      "type": "number",
+      "tablecode": "table1",
+      "key": "table1;xz",
+      "origin": {},
+      "templateOptions": {
+        "label": "工资",
+        "max": 100,
+        "min": 0,
+        "placeholder": "请输入工资"
+      },
+      "hooks": {}
+    },
+    {
+      "type": "password",
+      "tablecode": "table1",
+      "key": "table1;password",
+      "origin": {},
+      "templateOptions": {
+        "label": "密码",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "radio",
+      "tablecode": "table1",
+      "key": "table1;radio",
+      "origin": {},
+      "templateOptions": {
+        "label": "单选",
+        "parameterid": "para001",
+        "options": [
+          {
+            "label": "男",
+            "value": "male"
+          },
+          {
+            "label": "女",
+            "value": "female"
+          }
+        ],
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "checkbox",
+      "tablecode": "table1",
+      "key": "table1;checkbox",
+      "origin": {},
+      "templateOptions": {
+        "label": "多选",
+        "parameterid": "para002",
+        "options": [
+          {
+            "label": "男",
+            "value": "male"
+          },
+          {
+            "label": "女",
+            "value": "female"
+          }
+        ],
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "select",
+      "tablecode": "table1",
+      "key": "table1;select",
+      "origin": {},
+      "templateOptions": {
+        "label": "单选",
+        "selecttype": "single",
+        "parameterid": "para003",
+        "options": [
+          {
+            "label": "男",
+            "value": "male"
+          },
+          {
+            "label": "女",
+            "value": "female"
+          }
+        ],
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "datetime",
+      "tablecode": "table1",
+      "key": "table1;datetime",
+      "origin": {},
+      "templateOptions": {
+        "type": "datetime",
+        "label": "日期",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "image",
+      "tablecode": "table1",
+      "key": "table1;tp",
+      "origin": {},
+      "templateOptions": {
+        "label": "图片",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "lookup",
+      "tablecode": "table1",
+      "key": "table1;employee",
+      "origin": {},
+      "templateOptions": {
+        "type": "employee",
+        "label": "汇报人",
+        "controlid": "employee",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "lookup",
+      "tablecode": "table1",
+      "key": "table1;organizational",
+      "origin": {},
+      "templateOptions": {
+        "type": "organizational",
+        "label": "组织",
+        "controlid": "organizational",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "lookup",
+      "tablecode": "table1",
+      "key": "table1;position",
+      "origin": {},
+      "templateOptions": {
+        "type": "position",
+        "label": "职位",
+        "controlid": "position",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "lookup",
+      "tablecode": "table1",
+      "key": "table1;area",
+      "origin": {},
+      "templateOptions": {
+        "type": "area",
+        "label": "地区",
+        "controlid": "area",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "text",
+      "tablecode": "table1",
+      "key": "table1;name",
+      "origin": {},
+      "templateOptions": {
+        "label": "姓名",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "number",
+      "tablecode": "table1",
+      "key": "table1;number",
+      "origin": {},
+      "templateOptions": {
+        "label": "年龄",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "upload",
+      "tablecode": "table1",
+      "key": "table1;upload",
+      "origin": {},
+      "templateOptions": {
+        "label": "上传",
+        "attachment": {},
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "type": "textarea",
+      "tablecode": "table1",
+      "key": "table1;remark",
+      "origin": {},
+      "templateOptions": {
+        "label": "备注",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "key": "026e8fd1-6c14-7acf-532d-a161b2cf79fc",
+      "type": "html",
+      "templateOptions": {
+        "description": "教育经历信息",
+        "label": "",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "key": "b526f02d-9aab-d82e-3a63-d241349f0053",
+      "type": "repeat",
+      "fieldArray": {
+        "fieldGroup": [
+          {
+            "type": "text",
+            "tablecode": "table-jy",
+            "key": "table-jy;code",
+            "origin": {
+              "refdatasourcetype": "directinput",
+              "datatype": "nvarchar"
+            },
+            "templateOptions": {
+              "label": "学校名称",
+              "required": false
+            }
+          },
+          {
+            "type": "text",
+            "tablecode": "table-jy",
+            "key": "table-jy;name",
+            "origin": {},
+            "templateOptions": {
+              "label": "开始日期"
+            }
+          },
+          {
+            "type": "number",
+            "tablecode": "table-jy",
+            "key": "table-jy;number",
+            "origin": {},
+            "templateOptions": {
+              "label": "结束日期"
+            }
+          }
+        ]
+      },
+      "tablecode": "table-jy",
+      "hooks": {},
+      "templateOptions": {
+        "label": "",
+        "placeholder": ""
+      },
+      "defaultValue": []
+    },
+    {
+      "key": "5af07ca4-46b7-e9a0-a7d4-2c177b7c8a3e",
+      "type": "html",
+      "templateOptions": {
+        "description": "工作经历信息",
+        "label": "",
+        "placeholder": ""
+      },
+      "hooks": {}
+    },
+    {
+      "key": "4c5ba7f4-043d-176f-84f5-1c1564ad6ddf",
+      "type": "repeat",
+      "fieldArray": {
+        "fieldGroup": [
+          {
+            "type": "text",
+            "tablecode": "table3-gz",
+            "key": "table3-gz;name",
+            "origin": {
+              "refdatasourcetype": "directinput",
+              "datatype": "nvarchar"
+            },
+            "templateOptions": {
+              "label": "公司名称"
+            }
+          },
+          {
+            "type": "datetime",
+            "tablecode": "table3-gz",
+            "key": "table3-gz;begin",
+            "origin": {},
+            "templateOptions": {
+              "type": "datetime",
+              "label": "开始日期"
+            }
+          },
+          {
+            "type": "datetime",
+            "tablecode": "table3-gz",
+            "key": "table3-gz;end",
+            "origin": {},
+            "templateOptions": {
+              "type": "datetime",
+              "label": "结束日期"
+            }
+          }
+        ]
+      },
+      "tablecode": "table3-gz",
+      "hooks": {},
+      "templateOptions": {
+        "label": "",
+        "placeholder": ""
+      },
+      "defaultValue": []
+    }
+  ],
+  "column": "layout-column-2",
+  "row": "layout-row-1"
+}

@@ -1,0 +1,866 @@
+{
+    "code": "demo001",
+    "name": "第一个问卷设置",
+    "type": "test",
+    "begin": {
+        "show": true,
+        "text": "欢迎时开始实施"
+    },
+    "end": {
+        "show": true,
+        "text": "结束哦"
+    },
+    "pages": [{
+            "code": "pageCode1",
+            "name": "第1页",
+            "questions": [{
+                    "key": "c7d03a4a-03fe-e1b7-e97b-5561ca3c3bda",
+                    "type": "radio",
+                    "templateOptions": {
+                        "label": "单选题--请选择一个选项",
+                        "options": [{
+                                "label": "选项1",
+                                "value": "1",
+                                "score": 0
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2",
+                                "score": 0
+                            }
+                        ],
+                        "required": true,
+                        "setting": {
+                            "score": 0,
+                            "random": false,
+                            "layout": "1"
+                        },
+                        "placeholder": ""
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "95cb823d-89f9-1198-ec5e-9ced2d20f2c7",
+                    "type": "checkbox",
+                    "templateOptions": {
+                        "label": "多选题--请选择以下选项 (多选)",
+                        "required": true,
+                        "setting": {
+                            "score": 0,
+                            "random": false,
+                            "layout": "1",
+                            "max": 2,
+                            "min": 0
+                        },
+                        "options": [{
+                                "label": "选项多选1",
+                                "value": "1",
+                                "score": 0
+                            },
+                            {
+                                "label": "选项多选2",
+                                "value": "2",
+                                "score": 0
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "34fce9d6-6d91-e65c-6b4b-c6e3a24573e3",
+                    "type": "radio",
+                    "templateOptions": {
+                        "label": "投票题--请给以下选项投票",
+                        "required": true,
+                        "setting": {
+                            "score": 0,
+                            "random": false,
+                            "layout": "1"
+                        },
+                        "options": [{
+                                "label": "选项1",
+                                "value": "1",
+                                "score": 0
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2",
+                                "score": 0
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "bdd33374-edbd-81b1-18bb-e9407ee42343",
+                    "type": "dropdown",
+                    "templateOptions": {
+                        "label": "下拉题--请选择一个选",
+                        "required": true,
+                        "setting": {
+                            "score": 0
+                        },
+                        "options": [{
+                                "label": "选项1",
+                                "value": "1",
+                                "score": 0
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2",
+                                "score": 0
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "0333efce-bab0-4e1e-2371-dc5d345a5171",
+                    "type": "cascader",
+                    "templateOptions": {
+                        "label": "级联题--请选择以下选项",
+                        "required": true,
+                        "setting": {},
+                        "options": [{
+                                "label": "请选择",
+                                "value": "-1"
+                            },
+                            {
+                                "label": "选项1",
+                                "value": "1",
+                                "children": [{
+                                    "label": "选项1-1",
+                                    "value": "1-1"
+                                }]
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2",
+                                "children": [{
+                                    "label": "选项2-1",
+                                    "value": "2-1"
+                                }]
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "4153b814-866e-2d81-c9d7-458601bdcbf2",
+                    "type": "input",
+                    "templateOptions": {
+                        "type": "default",
+                        "label": "填空题--请填写本项内容",
+                        "required": true,
+                        "setting": {
+                            "size": "small",
+                            "minLength": 0,
+                            "maxLength": 200
+                        }
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "75c36d84-4557-f12d-2a90-4df79896aa1e",
+                    "type": "input_group",
+                    "templateOptions": {
+                        "label": "多项填空--请填写以下内容",
+                        "required": true,
+                        "setting": {},
+                        "options": [{
+                                "label": "填空1",
+                                "value": "1"
+                            },
+                            {
+                                "label": "填空2",
+                                "value": "2"
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "7e2892bb-3c08-e047-7dbe-faf802db324b",
+                    "type": "input",
+                    "templateOptions": {
+                        "type": "default",
+                        "label": "多行文本--请填写本项内容",
+                        "required": true,
+                        "setting": {
+                            "size": "large",
+                            "minLength": 0,
+                            "maxLength": 200
+                        }
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "03a2ded8-1cfd-825a-31f9-8d71387d2805",
+                    "type": "score",
+                    "templateOptions": {
+                        "type": "start",
+                        "label": "打分题--请给本项打分",
+                        "required": true,
+                        "setting": {
+                            "label": "",
+                            "score": 0,
+                            "min": 0,
+                            "max": 5
+                        }
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "2c9beaed-5039-4b83-28a0-e8c6636e86e4",
+                    "type": "evaluation",
+                    "templateOptions": {
+                        "label": "评价题--请选择一个选",
+                        "required": true,
+                        "setting": {
+                            "score": 0
+                        },
+                        "options": [{
+                                "label": "非常不满意",
+                                "value": "1",
+                                "tag": "态度冷淡\n推销多\n技术差"
+                            },
+                            {
+                                "label": "比较不满意",
+                                "value": "2",
+                                "tag": "速度慢\n仪表乱\n不专业"
+                            },
+                            {
+                                "label": "一般",
+                                "value": "3",
+                                "tag": "无互动\n不积极\n业务不精"
+                            },
+                            {
+                                "label": "比较满意",
+                                "value": "4",
+                                "tag": "文明礼貌\n速度快\n较专业"
+                            },
+                            {
+                                "label": "非常满意",
+                                "value": "5",
+                                "tag": "热情好客\n敬业精神\n技能专业"
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "28aaf5e1-a6d1-d382-d2a6-a40f5961b11f",
+                    "type": "nps",
+                    "templateOptions": {
+                        "label": "NPS题--您向朋友或同事推荐我们的可能性有多大？",
+                        "required": true,
+                        "setting": {},
+                        "options": [{
+                                "label": "0",
+                                "value": "0"
+                            },
+                            {
+                                "label": "1",
+                                "value": "1"
+                            },
+                            {
+                                "label": "2",
+                                "value": "2"
+                            },
+                            {
+                                "label": "3",
+                                "value": "3"
+                            },
+                            {
+                                "label": "4",
+                                "value": "4"
+                            },
+                            {
+                                "label": "5",
+                                "value": "5"
+                            },
+                            {
+                                "label": "6",
+                                "value": "6"
+                            },
+                            {
+                                "label": "7",
+                                "value": "7"
+                            },
+                            {
+                                "label": "8",
+                                "value": "8"
+                            },
+                            {
+                                "label": "9",
+                                "value": "9"
+                            },
+                            {
+                                "label": "10",
+                                "value": "10"
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "652ec0d1-c3b7-082e-471b-224a6694fe8b",
+                    "type": "line",
+                    "templateOptions": {
+                        "label": "分割线",
+                        "setting": {}
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "16a190e3-3650-76b8-8e8d-e6014ca7c3e0",
+                    "type": "remark",
+                    "templateOptions": {
+                        "label": "备注--请阅读本项说明，然后回答问题",
+                        "setting": {}
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "3c193790-dbb4-665f-a2a0-abaa3b4d907e",
+                    "type": "input",
+                    "templateOptions": {
+                        "type": "default",
+                        "label": "姓名--请填写姓名",
+                        "required": true,
+                        "setting": {
+                            "size": "small",
+                            "minLength": 0,
+                            "maxLength": 200
+                        }
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "b12959fa-f19c-3737-5765-473fca10b610",
+                    "type": "input",
+                    "templateOptions": {
+                        "type": "mobile",
+                        "label": "手机号--请填写手机号码",
+                        "required": true,
+                        "setting": {
+                            "size": "small",
+                            "minLength": 0,
+                            "maxLength": 200
+                        }
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "86a8a835-3e25-a280-7494-74b2fcd7ec30",
+                    "type": "input",
+                    "templateOptions": {
+                        "type": "email",
+                        "label": "邮箱--请填写邮箱",
+                        "required": true,
+                        "setting": {
+                            "size": "small",
+                            "minLength": 0,
+                            "maxLength": 200
+                        }
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "438313a0-a51f-b468-e6e1-2142f78ed103",
+                    "type": "radio",
+                    "templateOptions": {
+                        "label": "性别--请选择您的性别",
+                        "required": true,
+                        "setting": {
+                            "score": 0,
+                            "random": false,
+                            "layout": "1"
+                        },
+                        "options": [{
+                                "label": "男",
+                                "value": "1",
+                                "score": 0
+                            },
+                            {
+                                "label": "女",
+                                "value": "2",
+                                "score": 0
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "92b44f57-4269-ecc6-6c84-a04c16299c67",
+                    "type": "date",
+                    "templateOptions": {
+                        "label": "日期--请填写您的出生日期",
+                        "required": true,
+                        "setting": {}
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "74987217-19c0-4606-03f1-820c62cc7495",
+                    "type": "time",
+                    "templateOptions": {
+                        "label": "时间--请填写打卡时间",
+                        "required": true,
+                        "setting": {}
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "17fc3537-de62-27ad-b5e1-71b99bbc8590",
+                    "type": "radio",
+                    "templateOptions": {
+                        "label": "年龄--您的年龄是？",
+                        "required": true,
+                        "setting": {
+                            "score": 0,
+                            "random": false,
+                            "layout": "1"
+                        },
+                        "options": [{
+                                "label": "18~24岁",
+                                "value": "1",
+                                "score": 0
+                            },
+                            {
+                                "label": "25~30岁",
+                                "value": "2",
+                                "score": 0
+                            },
+                            {
+                                "label": "31~40岁",
+                                "value": "3",
+                                "score": 0
+                            },
+                            {
+                                "label": "41~50岁",
+                                "value": "4",
+                                "score": 0
+                            },
+                            {
+                                "label": "51~60岁",
+                                "value": "5",
+                                "score": 0
+                            },
+                            {
+                                "label": "61岁及以上",
+                                "value": "6",
+                                "score": 0
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "6a5a762a-c42d-bc01-a7ae-7667f8ae349c",
+                    "type": "radio",
+                    "templateOptions": {
+                        "label": "学历--请选择您的学历",
+                        "required": true,
+                        "setting": {
+                            "score": 0,
+                            "random": false,
+                            "layout": "1"
+                        },
+                        "options": [{
+                                "label": "小学级以下",
+                                "value": "1",
+                                "score": 0
+                            },
+                            {
+                                "label": "初中",
+                                "value": "2",
+                                "score": 0
+                            },
+                            {
+                                "label": "高中/中专/技校",
+                                "value": "3",
+                                "score": 0
+                            },
+                            {
+                                "label": "大学专科",
+                                "value": "4",
+                                "score": 0
+                            },
+                            {
+                                "label": "大学本科",
+                                "value": "5",
+                                "score": 0
+                            },
+                            {
+                                "label": "硕士研究生及以上",
+                                "value": "6",
+                                "score": 0
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "b4ced8c0-c767-753f-57ee-aa65ffc27dcf",
+                    "type": "cascader",
+                    "templateOptions": {
+                        "label": "专业--您大学所学专业是？",
+                        "required": true,
+                        "setting": {},
+                        "options": [{
+                                "label": "选项1",
+                                "value": "1",
+                                "children": [{
+                                    "label": "选项1-1",
+                                    "value": "1-1"
+                                }]
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2",
+                                "children": [{
+                                    "label": "选项2-1",
+                                    "value": "2-1"
+                                }]
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "a560efb1-4e8b-138c-715c-fd20c03d24e0",
+                    "type": "cascader",
+                    "templateOptions": {
+                        "label": "院校--您所就读的学校是？",
+                        "required": true,
+                        "setting": {},
+                        "options": [{
+                                "label": "选项1",
+                                "value": "1",
+                                "children": [{
+                                    "label": "选项1-1",
+                                    "value": "1-1"
+                                }]
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2",
+                                "children": [{
+                                    "label": "选项2-1",
+                                    "value": "2-1"
+                                }]
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "e428fe0a-c40e-0a7e-715c-b37e9835842b",
+                    "type": "cascader",
+                    "templateOptions": {
+                        "label": "行业--您目前所处行业是？",
+                        "required": true,
+                        "setting": {},
+                        "options": [{
+                                "label": "选项1",
+                                "value": "1",
+                                "children": [{
+                                    "label": "选项1-1",
+                                    "value": "1-1"
+                                }]
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2",
+                                "children": [{
+                                    "label": "选项2-1",
+                                    "value": "2-1"
+                                }]
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "d354e1cc-44ac-cea2-e68b-6cd1d7805d42",
+                    "type": "radio",
+                    "templateOptions": {
+                        "label": "职业--您目前所处职业是？",
+                        "required": true,
+                        "setting": {
+                            "score": 0,
+                            "random": false,
+                            "layout": "1"
+                        },
+                        "options": [{
+                                "label": "在校学生",
+                                "value": "1",
+                                "score": 0
+                            },
+                            {
+                                "label": "政府/机关干部/公务员",
+                                "value": "2",
+                                "score": 0
+                            },
+                            {
+                                "label": "企业管理者（包括基层及中高层管理者）",
+                                "value": "3",
+                                "score": 0
+                            },
+                            {
+                                "label": "普通职员（办公室/写字楼工作人员）",
+                                "value": "4",
+                                "score": 0
+                            },
+                            {
+                                "label": "专业人员（如医生/律师/文体/记者/老师等）",
+                                "value": "5",
+                                "score": 0
+                            },
+                            {
+                                "label": "普通工人（如工厂工人/体力劳动者等）",
+                                "value": "6",
+                                "score": 0
+                            },
+                            {
+                                "label": "商业服务业职工（如销售人员/商店职员/服务员等）",
+                                "value": "7",
+                                "score": 0
+                            },
+                            {
+                                "label": "个体经营者/承包商",
+                                "value": "8",
+                                "score": 0
+                            },
+                            {
+                                "label": "自由职业者",
+                                "value": "9",
+                                "score": 0
+                            },
+                            {
+                                "label": "农林牧渔劳动者",
+                                "value": "10",
+                                "score": 0
+                            },
+                            {
+                                "label": "退休",
+                                "value": "11",
+                                "score": 0
+                            },
+                            {
+                                "label": "暂无职业",
+                                "value": "12",
+                                "score": 0
+                            },
+                            {
+                                "label": "其他职业人员（请注明）",
+                                "value": "13",
+                                "score": 0
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "ecedbc5d-5ff0-7fad-ac29-88f3a64a2e73",
+                    "type": "matrix_radio",
+                    "templateOptions": {
+                        "label": "矩阵单选--请选择以下选项",
+                        "required": true,
+                        "setting": {
+
+                        },
+                        "subtitle": [{
+                                "label": "矩阵行1",
+                                "value": "1"
+                            },
+                            {
+                                "label": "矩阵行2",
+                                "value": "2"
+                            }
+                        ],
+                        "options": [{
+                                "label": "选项1",
+                                "value": "1"
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2"
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "54cff7b7-1eca-5ca3-c3b9-b9bd4c85c71e",
+                    "type": "matrix_checkbox",
+                    "templateOptions": {
+                        "label": "矩阵多选--请选择以下选项",
+                        "required": true,
+                        "setting": {},
+                        "subtitle": [{
+                                "label": "矩阵行1",
+                                "value": "1"
+                            },
+                            {
+                                "label": "矩阵行2",
+                                "value": "2"
+                            }
+                        ],
+                        "options": [{
+                                "label": "选项1",
+                                "value": "1"
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2"
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "3b19cc65-b023-55a8-8fb2-24c4880dc7de",
+                    "type": "matrix_score",
+                    "templateOptions": {
+                        "label": "矩阵打分--请给以下各项打分",
+                        "required": true,
+                        "setting": {},
+                        "subtitle": [{
+                                "label": "矩阵行1",
+                                "value": "1"
+                            },
+                            {
+                                "label": "矩阵行2",
+                                "value": "2"
+                            }
+                        ],
+                        "options": [{
+                                "label": "打分1",
+                                "value": "1"
+                            },
+                            {
+                                "label": "打分1",
+                                "value": "2"
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                },
+                {
+                    "key": "b96ac694-709c-f0d4-b847-4fc2a238df4b",
+                    "type": "matrix_input",
+                    "templateOptions": {
+                        "label": "矩阵填空--请填写以下内容",
+                        "required": true,
+                        "setting": {},
+                        "subtitle": [{
+                                "label": "矩阵行1",
+                                "value": "1"
+                            },
+                            {
+                                "label": "矩阵行2",
+                                "value": "2"
+                            }
+                        ],
+                        "options": [{
+                                "label": "填空1",
+                                "value": "1"
+                            },
+                            {
+                                "label": "填空1",
+                                "value": "2"
+                            }
+                        ]
+                    },
+                    "active": false,
+                    "hooks": {}
+                }
+            ]
+        },
+        {
+            "code": "pagecode_2",
+            "name": "第2页",
+            "questions": [{
+                    "key": "6c3a1bf8-ab78-1e19-3051-2d3490b2909e",
+                    "type": "radio",
+                    "templateOptions": {
+                        "label": "请选择一个选项",
+                        "options": [{
+                                "label": "选项1",
+                                "value": "1",
+                                "score": 0
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2",
+                                "score": 0
+                            }
+                        ],
+                        "required": true,
+                        "setting": {
+                            "score": 0,
+                            "random": false,
+                            "layout": "1"
+                        }
+                    }
+                },
+                {
+                    "key": "89eba378-30ef-3285-7868-2a5b70ab7a9c",
+                    "type": "checkbox",
+                    "templateOptions": {
+                        "label": "请选择以下选项 (多选)",
+                        "options": [{
+                                "label": "选项1",
+                                "value": "1",
+                                "score": 0
+                            },
+                            {
+                                "label": "选项2",
+                                "value": "2",
+                                "score": 0
+                            }
+                        ],
+                        "required": true,
+                        "setting": {
+                            "score": 0,
+                            "random": false,
+                            "layout": "1",
+                            "max": 2,
+                            "min": 0
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

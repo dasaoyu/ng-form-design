@@ -1,0 +1,214 @@
+.vxsurvey-basic {
+  background-color: white;
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  
+  .vxsurvey-form_button{
+    position: fixed;
+    top: 80px; 
+    text-align: right;
+    margin-left: 1020px;
+  }
+
+  vxform {
+    display: block;  
+    padding: 20px 30px;
+    background-color: #fff;
+    vxform-field{
+      display: inline-block; 
+      width: 100%;
+      padding: 15px 10px;
+      margin-bottom: 1px;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      .fieldlabel{
+        padding: 0 0 20px 0;
+        overflow: hidden;
+        font-size: 14px;
+        .required{
+          display: inline-block;
+          padding: 0 5px 0 0;
+          color: red;
+        }
+      }
+      .fieldcontrol{
+        padding: 0 0 0 20px;
+        font-size: 12px;
+        label{ 
+          font-size: 12px;
+        }
+      }
+    }
+    .ant-input{
+      font-size: 12px;
+    }
+    .invalid-feedback{
+      padding: 5px 0 0 0;
+    }
+  }
+  
+  //单选题
+  vxsurvey-radio{
+    .ant-radio-wrapper{
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+    .ant-radio-wrapper:nth-last-child(1){
+      margin: 0;
+    }
+  }
+
+  //多选题
+  vxsurvey-checkbox{
+    .ant-checkbox-wrapper{
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+    .ant-checkbox-wrapper:nth-last-child(1){
+      margin: 0;
+    }
+  }
+
+  //下拉题
+  vxsurvey-dropdown{
+    display: inline-block;
+    min-width: 350px;
+    .ant-select{
+      font-size: 12px;
+    }
+  }
+
+  //级联题
+  vxsurvey-cascader{
+    display: inline-block;
+    min-width: 350px;
+    .ant-cascader-picker{
+      font-size: 12px;
+    }
+  }
+
+  //填空题
+  vxsurvey-input{
+    display: inline-block;
+    min-width: 350px;
+  }
+
+  //多项填空题
+  vxsurvey-input_group{
+    display: inline-block;
+    min-width: 350px;
+    .inputlist{
+      .title{
+        padding: 0 0 5px 0;
+      }
+      .ant-input{
+        margin: 0 0 10px 0;
+      }
+    }
+    .inputlist:nth-last-child(1){ 
+      .ant-input{
+        margin: 0;
+      }
+    }
+  }
+
+  //评价题
+  vxsurvey-evaluation{
+    .label{
+      color: #fadb14;
+      font-size: 12px;
+      padding: 10px 0;
+    }
+    .tag{
+      span{ 
+        display: inline-block;
+        font-size: 12px;
+        color: #aaa; 
+        padding: 3px 10px; 
+        background: #fff;
+        border: 1px solid #eaeaea;
+        border-radius: 2px;
+        margin-right: 5px; 
+      }
+      label{
+        color: #6090df;
+        font-size: 12px;
+        margin-left: 5px;
+        cursor: pointer;;
+      }
+    }
+  }
+
+  //NPS题
+  vxsurvey-nps{
+    .option_wrap{
+      padding: 0 0 0 14px;
+      .ant-radio-button-wrapper{ 
+        padding: 0 17px;
+      }
+      &_text{ 
+        padding: 10px 0 0 0;
+        width: 504px; 
+        font-size: 12px;
+        span:nth-child(1){
+          float: left;
+        }
+        span:nth-child(2){
+          float: right;
+        }
+      }
+    } 
+  }
+  
+  //分割线
+  vxsurvey-line{
+    .line{
+      height: 0;
+      width: 100%;
+      border-top: 1px dashed #aaa;
+      margin: 10px 0 8px 0;
+    }
+  }
+
+  //日期
+  vxsurvey-date{
+    .ant-calendar-picker{
+      min-width: 350px;
+    }
+  }
+
+  //时间
+  vxsurvey-time{
+    .ant-time-picker{
+      min-width: 350px;
+    }
+    .ant-time-picker-input{
+      font-size: 12px;
+    }
+  }
+
+  //矩阵单选|多选|打分|填空
+  vxsurvey-matrix_radio,vxsurvey-matrix_checkbox,vxsurvey-matrix_score,vxsurvey-matrix_input{
+    .option_wrap{
+      width: auto;
+      border-top: 1px solid #d8d8d8;
+      border-right: 1px solid #d8d8d8;
+      tr{
+        td{
+          height: 32px;
+          border-left: 1px solid #d8d8d8;
+          border-bottom: 1px solid #d8d8d8;
+          padding: 2px 15px;
+        }
+      }
+    }
+    
+    .ant-checkbox-group
+    {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@{footer-toolbar-prefix} {
+  &__left {
+    margin-left: @vx-default-aside-wd;
+  }
+}
+
+@{vx-default-prefix}__collapsed {
+  @{footer-toolbar-prefix} {
+    &__left {
+      margin-left: @vx-default-aside-collapsed-wd;
+    }
+  }
+}
+
+@{footer-toolbar-prefix}__body {
+  @{vx-default-prefix}__content {
+    margin-bottom: @layout-gutter + @footer-toolbar-height;
+  }
+}

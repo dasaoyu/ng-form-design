@@ -1,0 +1,95 @@
+
+@import '../assets/fonts/design.less';
+@import './layout.less';
+@import './vxform.less';
+@import './form.less'; 
+@import './vx-survey.less';
+
+.sidebar-nav__item-link {
+  padding: 8px 20px 8px 10px;
+}
+
+.empty-image{
+  text-align: center;
+  margin: 100px 0 0 0;
+  img{
+    height: 160px;
+  }
+}
+
+.card-scrollbar{ 
+  .ant-card-body{
+    margin-right: 25px;
+    margin-top: 25px;
+    scrollbar-color: transparent;
+    overflow-y: overlay;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #999;
+      border-radius: 6px;
+      outline: 1px solid #333;
+    }
+  }
+}
+.vx-default__content
+{
+  margin-left:20px!important;
+}
+.vx-default__header-logo{
+  width: auto !important;
+  color: #fff !important;
+  a{
+    padding: 0 0 0 20px;
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      float: left;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  span{
+    color: #fff;
+    padding: 5px 0 0 8px;
+    display: inline-block;
+  }
+}
+
+.vx-default__nav{
+  li{
+    padding: 0 20px;
+    a{
+      color: #fff;
+    }
+  }
+}
+
+nz-carousel{
+  .slick-dots-bottom{
+    li{
+      button{
+        background: #6F7AA7 !important;
+      }
+    }
+  } 
+}
+
+.design .panel{
+  border: 0px !important;
+}
+
+.design .panel .vxbutton{
+  // border: 0px !important;
+}

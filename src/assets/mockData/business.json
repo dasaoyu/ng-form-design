@@ -1,0 +1,295 @@
+{
+	"primary": {
+		"tablecode": "table1",
+		"tablename": "员工基本信息表",
+		"tablefields": [{
+				"datatype": "text",
+				"tablecode": "table1",
+				"fieldcode": "table1;code",
+				"fieldname": "工号",
+				"allownull": false,
+				"isbutintin": true
+			}, {
+				"datatype": "texti18n",
+				"tablecode": "table1",
+				"fieldcode": "table1;name",
+				"fieldname": "姓名"
+			}, {
+				"datatype": "textarea",
+				"tablecode": "table1",
+				"fieldcode": "table1;remark",
+				"fieldname": "备注"
+			}, {
+				"datatype": "number",
+				"tablecode": "table1",
+				"fieldcode": "table1;number",
+				"fieldname": "年龄"
+			}, {
+				"datatype": "number",
+				"tablecode": "table1",
+				"fieldcode": "table1;xz",
+				"fieldname": "工资",
+				"placeholder": "请输入工资",
+				"max": 100,
+				"min": 0,
+				"accuracy": 2
+			}, {
+				"datatype": "password",
+				"tablecode": "table1",
+				"fieldcode": "table1;password",
+				"fieldname": "密码"
+			},
+			{
+				"datatype": "radio",
+				"tablecode": "table1",
+				"fieldcode": "table1;radio",
+				"fieldname": "单选",
+				"parameterid": "para001",
+				"parameterdata": [{
+					"label": "男",
+					"value": "male"
+				}, {
+					"label": "女",
+					"value": "female"
+				}]
+			},
+			{
+				"datatype": "checkbox",
+				"tablecode": "table1",
+				"fieldcode": "table1;checkbox",
+				"fieldname": "多选",
+				"parameterid": "para002",
+				"parameterdata": [{
+					"label": "男",
+					"value": "male"
+				}, {
+					"label": "女",
+					"value": "female"
+				}]
+			},
+			{
+				"datatype": "select",
+				"tablecode": "table1",
+				"fieldcode": "table1;select",
+				"fieldname": "单选",
+				"parameterid": "para003",
+				"parameterdata": [{
+					"label": "男",
+					"value": "male"
+				}, {
+					"label": "女",
+					"value": "female"
+				}],
+				"selecttype": "single"
+			},
+			{
+				"datatype": "datetime",
+				"tablecode": "table1",
+				"fieldcode": "table1;datetime",
+				"fieldname": "日期",
+				"formart": "YYYY-MM-DD"
+			},
+			{
+				"datatype": "image",
+				"tablecode": "table1",
+				"fieldcode": "table1;tp",
+				"fieldname": "图片"
+			},
+			{
+				"datatype": "upload",
+				"tablecode": "table1",
+				"fieldcode": "table1;upload",
+				"fieldname": "上传"
+			},
+			{
+				"datatype": "lookup",
+				"tablecode": "table1",
+				"fieldcode": "table1;employee",
+				"fieldname": "汇报人",
+				"controlid": "employee"
+			},
+			{
+				"datatype": "lookup",
+				"tablecode": "table1",
+				"fieldcode": "table1;organizational",
+				"fieldname": "组织",
+				"controlid": "organizational"
+			},
+			{
+				"datatype": "lookup",
+				"tablecode": "table1",
+				"fieldcode": "table1;position",
+				"fieldname": "职位",
+				"controlid": "position"
+			},
+			{
+				"datatype": "lookup",
+				"tablecode": "table1",
+				"fieldcode": "table1;area",
+				"fieldname": "地区",
+				"controlid": "area"
+			}
+		]
+	},
+	"child": {
+		"single": [],
+		"multiple": [{
+				"tablecode": "table-jy",
+				"tablename": "教育经历",
+				"tablefields": [{
+						"datatype": "text",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;code",
+						"fieldname": "工号",
+						"allownull": false
+					}, {
+						"datatype": "texti18n",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;name",
+						"fieldname": "姓名"
+					}, {
+						"datatype": "textarea",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;remark",
+						"fieldname": "备注"
+					}, {
+						"datatype": "number",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;number",
+						"fieldname": "年龄"
+					}, {
+						"datatype": "number",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;xz",
+						"fieldname": "工资",
+						"placeholder": "请输入工资",
+						"max": 100,
+						"min": 0,
+						"accuracy": 2
+					}, {
+						"datatype": "password",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;password",
+						"fieldname": "密码"
+					},
+					{
+						"datatype": "radio",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;radio",
+						"fieldname": "单选",
+						"parameterid": "para001",
+						"parameterdata": [{
+							"label": "男",
+							"value": "male"
+						}, {
+							"label": "女",
+							"value": "female"
+						}]
+					},
+					{
+						"datatype": "checkbox",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;checkbox",
+						"fieldname": "多选",
+						"parameterid": "para002",
+						"parameterdata": [{
+							"label": "男",
+							"value": "male"
+						}, {
+							"label": "女",
+							"value": "female"
+						}]
+					},
+					{
+						"datatype": "select",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;select",
+						"fieldname": "单选",
+						"parameterid": "para003",
+						"parameterdata": [{
+							"label": "男",
+							"value": "male"
+						}, {
+							"label": "女",
+							"value": "female"
+						}],
+						"selecttype": "single"
+					},
+					{
+						"datatype": "datetime",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;datetime",
+						"fieldname": "日期",
+						"formart": "YYYY-MM-DD"
+					},
+					{
+						"datatype": "image",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;tp",
+						"fieldname": "图片"
+					},
+					{
+						"datatype": "upload",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;upload",
+						"fieldname": "上传"
+					},
+					{
+						"datatype": "lookup",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;employee",
+						"fieldname": "汇报人",
+						"controlid": "employee"
+					},
+					{
+						"datatype": "lookup",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;organizational",
+						"fieldname": "组织",
+						"controlid": "organizational"
+					},
+					{
+						"datatype": "lookup",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;position",
+						"fieldname": "职位",
+						"controlid": "position"
+					},
+					{
+						"datatype": "lookup",
+						"tablecode": "table-jy",
+						"fieldcode": "table-jy;area",
+						"fieldname": "地区",
+						"controlid": "area"
+					}
+				]
+			},
+			{
+				"tablecode": "table3-gz",
+				"tablename": "工作经验",
+				"tablefields": [{
+						"tablecode": "table3-gz",
+						"fieldcode": "table3-gz;name",
+						"fieldname": "公司名称",
+						"refdatasourcetype": "directinput",
+						"datatype": "text"
+					},
+					{
+						"tablecode": "table3-gz",
+						"fieldcode": "table3-gz;begin",
+						"fieldname": "开始时间",
+						"refdatasourcetype": "directinput",
+						"datatype": "datetime"
+					},
+					{
+						"tablecode": "table3-gz",
+						"fieldcode": "table3-gz;end",
+						"fieldname": "结束时间",
+						"refdatasourcetype": "directinput",
+						"datatype": "datetime"
+					}
+				]
+			}
+		]
+	}
+}
