@@ -36,7 +36,7 @@
 
 如果觉得还不错，请作者喝杯咖啡吧 ☺
 
-![](http://docs.form.xiaoyaoji.cn/donation.jpeg)
+![](https://github.com/dasaoyu/ng-form-design/src/assets/images/wechat.jpg)
 
 [PayPal Me](https://paypal.me/gavinzhulei)
 
