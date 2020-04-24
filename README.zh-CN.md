@@ -38,7 +38,7 @@
 
 如果觉得还不错，请作者喝杯咖啡吧 ☺
 
-![](https://github.com/dasaoyu/ng-form-design/blob/master/src/assets/images/wechat.jpg)
+![](http://m.qpic.cn/psc?/V13pY5yo3DCwpX/4Dx8mC7Mrz.9w6PPcIVSVk61AP6WOLSvwUp.foV3UXPDa3*L3wKtFlYR49556f2C9aB2fbOlpicUjA9.uJhDUg!!/b&bo=AAkaBAAAAAARByc!&rf=viewer_4)
 
 
 ## 开源协议
