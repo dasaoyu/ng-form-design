@@ -11,7 +11,7 @@ import {
 import { Observable, of, throwError } from 'rxjs';
 import { mergeMap, catchError } from 'rxjs/operators';
 import { NzMessageService, NzNotificationService } from 'ng-zorro-antd';
-import { _HttpClient } from '@vx/theme'; 
+import { _HttpClient } from '@knz/theme'; 
 import { environment } from '@env/environment'; 
 
 const CODEMESSAGE = {

@@ -7,15 +7,15 @@ import {
 } from "@angular/forms";
 import { zip } from 'rxjs';
 import { NzMessageService,NzModalService } from 'ng-zorro-antd';
-import { _HttpClient } from '@vx/theme';
+import { _HttpClient } from '@knz/theme';
 import {
-  VXFormOptions,
-  VXFormFieldConfig,
-  VXTableFieldConfig,
-  VXFormInfo, 
-  VXFormCommonService,
-} from "@vx-form/core";
-import {IDesignFormAPI} from "@vx-form/ant" ;
+  KreFormOptions,
+  KreFormFieldConfig,
+  KreTableFieldConfig,
+  KreFormInfo, 
+  KreFormCommonService,
+} from "@kre-form/core";
+import {IDesignFormAPI} from "@kre-form/ant" ;
 import { Template } from '@angular/compiler/src/render3/r3_ast';
  
 @Component({
@@ -32,13 +32,13 @@ export class FormComponent implements OnInit {
 
   form = new FormGroup({});
   model: any = {};
-  options: VXFormOptions = {};
-  config: VXFormFieldConfig[] = [
+  options: KreFormOptions = {};
+  config: KreFormFieldConfig[] = [
   ];
   layout:string = "layout-column-2";
   @ViewChild('tplContent', { static: true }) tplContent;
   constructor(private http: _HttpClient, public msg: NzMessageService,public modalService: NzModalService, private cdr: ChangeDetectorRef,private fb: FormBuilder,
-    public vxFormCommonService: VXFormCommonService) {}
+    public vxFormCommonService: KreFormCommonService) {}
 
   ngOnInit() {
     this.form = this.fb.group({ 

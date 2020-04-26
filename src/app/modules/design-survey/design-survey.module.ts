@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 
-import { VXFormModule } from "@vx-form/core";
-import { VXSurveyModule } from "@vx-form/survey";   
+import { KreFormModule } from "@kre-form/core";
+import { KreSurveyModule } from "@kre-form/survey";   
 import { DesignSurveyRoutingModule } from './design-survey-routing.module';
  
 import { SurveyComponent } from './index.component';
@@ -14,8 +14,8 @@ const COMPONENTS_NOROUNT = [];
 
 @NgModule({
   imports: [ DesignSurveyRoutingModule,
-    VXFormModule.forRoot(),
-    VXSurveyModule],
+    KreFormModule.forRoot(),
+    KreSurveyModule],
   declarations: [...COMPONENTS, ...COMPONENTS_NOROUNT],
   entryComponents: COMPONENTS_NOROUNT,
 })

@@ -1,7 +1,8 @@
  
 import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core';
 import { throwIfAlreadyLoaded } from '@core';
-import { VXThemeModule } from '@vx/theme'; 
+import { KNZThemeModule } from '@knz/theme'; 
+import { KNZRoleModule } from '@knz/role'; 
 const MOCK_MODULES = [];
  
 const REUSETAB_PROVIDES = [
@@ -14,7 +15,7 @@ const GLOBAL_CONFIG_PROVIDES = [
 ]; 
 
 @NgModule({
-  imports: [VXThemeModule.forRoot(), ...MOCK_MODULES],
+  imports: [KNZThemeModule.forRoot(),KNZRoleModule.forRoot(), ...MOCK_MODULES],
 })
 export class VXModule {
   constructor(@Optional() @SkipSelf() parentModule: VXModule) {

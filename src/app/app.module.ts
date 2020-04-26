@@ -11,8 +11,8 @@ import { registerLocaleData } from '@angular/common';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { DELON_LOCALE, zh_CN as vxLang } from '@vx/theme';
-import { VX_I18N_TOKEN } from '@vx/theme';
+import { DELON_LOCALE, zh_CN as vxLang } from '@knz/theme';
+import { KNZ_I18N_TOKEN } from '@knz/theme';
 import { DefaultInterceptor,StartupService,I18NService } from '@core'; 
 import { JsonSchemaModule } from '@shared/json-schema/json-schema.module';
 
@@ -44,7 +44,7 @@ const I18NSERVICE_MODULES = [
   }),
 ];
 
-const I18NSERVICE_PROVIDES = [{ provide: VX_I18N_TOKEN, useClass: I18NService, multi: false }];
+const I18NSERVICE_PROVIDES = [{ provide: KNZ_I18N_TOKEN, useClass: I18NService, multi: false }];
  
 const GLOBAL_THIRD_MODULES = [];
 

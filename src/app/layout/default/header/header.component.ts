@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { SettingsService } from '@vx/theme';
+import { SettingsService } from '@knz/theme';
 
 @Component({
   selector: 'layout-header',

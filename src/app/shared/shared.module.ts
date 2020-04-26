@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 // vx
-import { VXThemeModule } from '@vx/theme';
+import { KNZThemeModule } from '@knz/theme';
 // i18n
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -32,7 +32,7 @@ const PIPES = [
     FormsModule,
     RouterModule,
     ReactiveFormsModule,
-    VXThemeModule.forChild(),
+    KNZThemeModule.forChild(),
     
     ...THIRDMODULES
     
@@ -47,7 +47,7 @@ const PIPES = [
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-    VXThemeModule,
+    KNZThemeModule,
     TranslateModule, 
     ...THIRDMODULES, 
     ...COMPONENTS,

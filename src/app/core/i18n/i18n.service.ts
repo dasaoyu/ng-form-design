@@ -15,12 +15,12 @@ import * as df_zh_tw from 'date-fns/locale/zh_tw';
 import { TranslateService } from '@ngx-translate/core';
 import {
   SettingsService,
-  VXI18NService,
-  VXLocaleService,
+  KNZI18NService,
+  KNZLocaleService,
   en_US as vxEnUS,
   zh_CN as vxZhCn,
   zh_TW as vxZhTw,
-} from '@vx/theme';
+} from '@knz/theme';
 
 interface LangData {
   text: string;
@@ -52,7 +52,7 @@ const LANGS: { [key: string]: LangData } = {
 };
 
 @Injectable({ providedIn: 'root' })
-export class I18NService implements VXI18NService {
+export class I18NService implements KNZI18NService {
   private _default = DEFAULT;
   private change$ = new BehaviorSubject<string | null>(null);
 
@@ -64,7 +64,7 @@ export class I18NService implements VXI18NService {
   constructor(
     settings: SettingsService,
     private nzI18nService: NzI18nService,
-    private vxLocaleService: VXLocaleService,
+    private vxLocaleService: KNZLocaleService,
     private translate: TranslateService,
   ) {
     // `@ngx-translate/core` 预先知道支持哪些语言

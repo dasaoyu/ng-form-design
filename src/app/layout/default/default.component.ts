@@ -13,7 +13,7 @@ import {
 import { DOCUMENT } from '@angular/common';
 import { Router, NavigationEnd, RouteConfigLoadStart, RouteConfigLoadEnd, NavigationError, NavigationCancel } from '@angular/router';
 import { NzMessageService } from 'ng-zorro-antd'; 
-import { SettingsService } from '@vx/theme'; 
+import { SettingsService } from '@knz/theme'; 
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
  

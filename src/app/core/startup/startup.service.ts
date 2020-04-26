@@ -2,7 +2,7 @@ import { Injectable, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { zip } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { MenuService, SettingsService, TitleService, VX_I18N_TOKEN } from '@vx/theme';
+import { MenuService, SettingsService, TitleService, KNZ_I18N_TOKEN } from '@knz/theme';
 import { TranslateService } from '@ngx-translate/core';
 import { I18NService } from '../i18n/i18n.service';
 
@@ -20,7 +20,7 @@ export class StartupService {
     iconSrv: NzIconService,
     private menuService: MenuService,
     private translate: TranslateService,
-    @Inject(VX_I18N_TOKEN) private i18n: I18NService,
+    @Inject(KNZ_I18N_TOKEN) private i18n: I18NService,
     private settingService: SettingsService,
     private titleService: TitleService,
     private httpClient: HttpClient,
