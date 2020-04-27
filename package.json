@@ -62,9 +62,9 @@
         "@knz/assembly": "2.1.0",
         "@knz/chart": "2.1.0",
         "@knz/util": "2.1.0",
-        "@kre-form/core": "1.0.0",
-        "@kre-form/ant": "1.0.0",
-        "@kre-form/survey": "1.0.0"
+        "@kre-form/core": "1.1.0",
+        "@kre-form/ant": "1.1.0",
+        "@kre-form/survey": "1.1.0"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "~0.803.14",
