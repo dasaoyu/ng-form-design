@@ -24,11 +24,11 @@
 
 ## 组件
 
--VX/CORE [vxform]常规表单|问卷表单生成器（根据设计器中获取的配置 json 数据，快速渲染出表单页面）。
+-kre-form/core [kreform]常规表单|问卷表单生成器（根据设计器中获取的配置 json 数据，快速渲染出表单页面）。
 
--VX/ANT [vxform-design-detail]常规表单设计器（基于可视化操作快速设计出表单页面，并获取到表单配置 json 数据）。 
+-kre-form/ant [kreform-design]常规表单设计器（基于可视化操作快速设计出表单页面，并获取到表单配置 json 数据）。 
 
--VX/SURVEY [vxsurvey-design-detail]问卷表单设计器（基于可视化操作快速设计出表单页面，并获取到表单配置 json 数据）。
+-kre-form/survey [kresurvey-design]问卷表单设计器（基于可视化操作快速设计出表单页面，并获取到表单配置 json 数据）。
 
 ## 支持
 
@@ -38,15 +38,14 @@
 
 如果觉得还不错，请作者喝杯咖啡吧 ☺
 
-![](http://m.qpic.cn/psc?/V13pY5yo3DCwpX/4Dx8mC7Mrz.9w6PPcIVSVk61AP6WOLSvwUp.foV3UXPDa3*L3wKtFlYR49556f2C9aB2fbOlpicUjA9.uJhDUg!!/b&bo=AAkaBAAAAAARByc!&rf=viewer_4)
+![](https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/cdb90adef9a2c41c941c424c75ff4ff1889692770fc27fa360dec97d1719573538ed25205fa952a14d1d38435c193c0a?pictype=scale&from=30113&version=3.3.3.3&uin=1502543012&fname=wechat.jpg&size=750)
 
 
 ## 开源协议
 
-[LGPL](https://opensource.org/licenses/LGPL-3.0)
-
-您可以将 ng-form-desgin 源码用于 LGPL 协议的开源项目中，并保留版权信息。
+免费
+ 
 
 ## 商业许可
 
-如果要将 ng-form-desgin 源码使用在非开源站点，项目和应用程序中，为保障您的合法权益，需购买-商业授权,联系我们(dasaoyu@yeah.net)
+如果要将您要深度合作请,联系我们(dasaoyu@yeah.net)
