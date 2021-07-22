@@ -105,7 +105,7 @@
         "stylelint-order": "^3.1.1",
         "webpack-bundle-analyzer": "^3.6.0",
         "antd-theme-generator": "^1.1.7",
-        "xlsx": "^0.15.1",
+        "xlsx": "^0.17.0",
         "ng-alain": "^8.8.0",
         "ng-alain-codelyzer": "^0.0.1"
     },
